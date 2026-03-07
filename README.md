@@ -30,12 +30,13 @@ Agent Development Kit es un kit diseñado para la creación e implemetación de 
 ```bash
 mkdir nombre_de_tu_carpeta
 cd nombre_de_tu_carpeta
+uv init
 ```
 
 ### 2. Crear el entorno virtual de Python y sincronizar los cambios que hagas con el venv
 ```bash
-uv venv
-uv sync
+uv venv google-adk 
+source adk/bin/activate
 ```
 
 ### 3. Instalar el ADK de Google
@@ -53,15 +54,14 @@ adk --version
 
 ### Crear un agente a través de un template predeterminado
 ```bash
-uv adk create my_agent
+uv adk my_first_agent
 ```
 
 ![alt text](image-1.png)
 
 ### Ejecutar en interfaz web
 ```bash
-uv run adk web  
-adk web my_agent
+uv run adk web
 ```
 
 ### Ejecutar en terminal
