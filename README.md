@@ -57,7 +57,7 @@ adk --version
 uv adk my_first_agent
 ```
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ### Ejecutar en interfaz web
 ```bash
@@ -71,7 +71,7 @@ adk run my_agent
 
 ### Resultado
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## Recursos
 
