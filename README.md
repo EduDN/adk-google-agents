@@ -80,7 +80,7 @@ adk run my_agent
 - [Google AI Studio](https://aistudio.google.com/)
 
 
-# Explicación de Componentes internos del ADK
+# Componentes internos del ADK
 
 <details>
 <summary><strong>Agent.py 🤖</strong></summary>
@@ -167,7 +167,7 @@ instruction='Answer user questions to the best of your knowledge',
 
 </details>
 
-<details><summary><strong>Formas de ejecutar tu Agente 🤖</strong></summary>
+<details><summary><strong>Formas de ejecutar/consumir tu Agente 🤖</strong></summary>
 
 ### Terminal
 ``` bash
@@ -183,7 +183,8 @@ adk run my_first_agent
 adk web
 ```
 
-### Api Rest
+<details>
+<summary><strong>Api Rest</strong></summary>
 Levantaremos un local web server
 
 **Debe ser ejecutado desde la carpeta padre (adk-google-agents)**
@@ -242,7 +243,7 @@ http://localhost:8000/run
 **Resultado Esperado**
 
 ![alt text](/images/image8.png)
-
+</details>
 
 
 </details>
