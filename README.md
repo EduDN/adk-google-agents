@@ -169,7 +169,9 @@ instruction='Answer user questions to the best of your knowledge',
 
 <details><summary><strong>Formas de ejecutar/consumir tu Agente 🤖</strong></summary>
 
+
 ### Terminal
+
 ``` bash
 adk run carpeta_donde_esta_tu_agente
 ```
@@ -184,7 +186,7 @@ adk web
 ```
 
 <details>
-<summary><strong>Api Rest</strong></summary>
+<summary><strong>Api's</strong></summary>
 Levantaremos un local web server
 
 **Debe ser ejecutado desde la carpeta padre (adk-google-agents)**
@@ -243,6 +245,37 @@ http://localhost:8000/run
 **Resultado Esperado**
 
 ![alt text](/images/image8.png)
+
+
+**Send a Query with Server-Sent-Events**
+
+A diferencia de la anterior forma de ejecutar queries, el Server Sent Events nos permite regresar tokens en tiempo real, por lo que veremos diversos outputs en nuestro JSON, debido a que llegan en tiempo real.
+
+
+
+```bash
+http://localhost:8000/run_sse
+```
+
+```bash
+{
+"appName": "my_first_agent",
+"userId": "u_123",
+"sessionId": "s_123",
+"newMessage": {
+    "role": "user",
+    "parts": [{
+    "text": "Cuánto es 2+1+(5*4) y qué se resuelve primero en la operación?"
+    }]
+},
+"streaming": true
+}
+```
+![alt text](/images/image9.png)
+
+
+[Documentación de ApiServer ADK](https://google.github.io/adk-docs/runtime/api-server/)
+
 </details>
 
 
