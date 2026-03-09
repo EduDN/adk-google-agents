@@ -278,5 +278,59 @@ http://localhost:8000/run_sse
 
 </details>
 
+</details>
+
+<details>
+<summary><strong>Arquitectura del AKD</strong></summary>
+<p></p>
+
+**Agentes**
+
+* Orquestador de agentes y tipos de agentes
+
+**Herramientas (tools)**
+
+* Tools preconstruidas y personalizables
+
+**Runners**
+
+* Flujo de ejecución, manejo de mensajes y eventos
+
+**Sesssions**
+
+* Mantiene contexto entre interacciones, persisten info importante y permiten conversaciones continuas
+</summary>
+
+</details>
+
+<details>
+<summary><strong>Tipos de ejecución</strong></summary>
+<p></p>
+
+
+<details>
+<summary><strong>Asíncrona</strong></summary>
+<p></p>
+
+Piensa en un sistema multi-agente para asesoría de inversiones. Tienes un agente consultando APIs financieras, otro evaluando el perfil de riesgo y un tercero redactando el reporte final. Aquí la asincronía (async) es obligatoria. El servidor aprovecha el tiempo de espera para gestionar los tres agentes al mismo tiempo. Si lo hicieras síncrono, el sistema se congelaría por completo esperando al primer agente antes de siquiera despertar al segundo.
+
+</details>
+
+
+<details>
+<summary><strong>Sinncrona</strong></summary>
+<p></p>
+Imagina que estás construyendo un script en Python que utiliza Pandas para cargar, limpiar y fusionar múltiples archivos CSV masivos que contienen millones de registros sobre tiempos de traslado urbanos o inventarios logísticos.
+
+El objetivo del script es procesar esos datos, aplicar transformaciones matemáticas complejas a las columnas y generar un reporte final limpio que después tu agente de IA va a leer.
+
+La forma asincronica estaría interrumpiendo constantemente el proceso que esta realizando y entorpecería el proceso, haciendolo más lento.
+</details>
+
+**Resumen**
+
+Asíncrono: Para servir a muchos usuarios, orquestar múltiples agentes y esperar respuestas de red (I/O).
+
+Síncrono: Para procesar datos pesados localmente, hacer cálculos matemáticos intensivos o ejecutar scripts secuenciales donde el paso 2 necesita estrictamente del paso 1.
 
 </details>
