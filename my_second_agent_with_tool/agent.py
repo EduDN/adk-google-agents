@@ -1,11 +1,3 @@
-from google.adk.agents.llm_agent import Agent
-
-root_agent = Agent(
-    model='gemini-3-pro-preview',
-    name='root_agent',
-    description='A helpful assistant for user questions.',
-    instruction='Answer user questions to the best of your knowledge',
-)
 from google.adk.agents import Agent
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService

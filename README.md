@@ -17,6 +17,11 @@ Agent Development Kit es un kit diseñado para la creación e implemetación de 
 * ADK esta echo en contenedores, por lo que es fácil su despliegue 
 
 
+## Proyectos
+
+* [Agente Inicial](https://github.com/EduDN/adk-google-agents/tree/main/my_first_agent)
+* [Agente con Tool de Google Search](https://github.com/EduDN/adk-google-agents/tree/main/my_second_agent_with_tool)
+
 ## Requisitos
 
 - Python 3.11 o superior
